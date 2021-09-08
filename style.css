@@ -1,0 +1,30 @@
+@import url('https://bootswatch.com/5/slate/bootstrap.min.css');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css');
+
+#c-income {
+  border-right: 2px solid rgba(255, 255, 255, 0.5);
+}
+
+.history-item-income {
+  border: none !important;
+  border-radius: none !important;
+  border-right: 10px solid var(--bs-success) !important;
+}
+
+.history-item-expense {
+  border: none !important;
+  border-radius: none !important;
+  border-right: 10px solid var(--bs-danger) !important;
+}
+
+.close {
+  font-size: 23px;
+  color: var(--bs-danger);
+  cursor: pointer;
+  opacity: 0;
+  transition: opacity ease 0.5s;
+}
+
+.history-item:hover .close {
+  opacity: 1;
+}

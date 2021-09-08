@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Expense Manager</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <section class="section py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <h1>Expense Manager</h1>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <div class="row">
+              <div class="col-md-12">
+                <h4 class="text-center">Add new transaction</h4>
+                <hr />
+                <label for="transaction-name">Transaction Name</label>
+                <input
+                  type="text"
+                  class="form-control mb-2"
+                  id="transaction-name"
+                  placeholder="Enter transaction name"
+                />
+                <label for="amount">Amount</label>
+                <span class="text-muted"
+                  >(Negative - Expense, Positive - Income)</span
+                >
+                <input
+                  type="number"
+                  class="form-control mb-2"
+                  id="amount"
+                  placeholder="Enter amount"
+                />
+                <button
+                  type="button"
+                  class="btn btn-primary"
+                  id="add-transaction"
+                >
+                  Add Transaction
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="row">
+              <div class="col-md-12 text-center">
+                <h4>Your Balance</h4>
+                <h2>₹ <span class="your-balance">00.00</span></h2>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12">
+                <div class="card card-body shadow-sm border text-center">
+                  <div class="row">
+                    <div class="col-md-6" id="c-income">
+                      <h5>INCOME</h5>
+                      <h4 class="text-success">
+                        ₹ <span id="income">00.00</span>
+                      </h4>
+                    </div>
+                    <div class="col-md-6" id="c-expense">
+                      <h5>EXPENSE</h5>
+                      <h4 class="text-danger">
+                        ₹ <span id="expense">00.00</span>
+                      </h4>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="row">
+              <div class="col-md-12 history">
+                <h4 class="text-center">History</h4>
+                <hr />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="./script.js"></script>
+  </body>
+</html>
